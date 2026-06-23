@@ -210,7 +210,7 @@ export default function App() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                src="/_DSC7833.JPG"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
