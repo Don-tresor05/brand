@@ -54,7 +54,7 @@ export default function App() {
             style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
             whileHover={{ scale: 1.05 }}
           >
-            Alex Chen
+            Trésor Irakoze
           </motion.div>
 
           <div className="hidden md:flex items-center gap-8 text-sm">
