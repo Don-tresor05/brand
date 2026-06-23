@@ -50,10 +50,11 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <motion.div
-            className="text-2xl tracking-tight"
+            className="flex items-center gap-3 text-2xl tracking-tight"
             style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
             whileHover={{ scale: 1.05 }}
           >
+            <img src="/logo/tt.png" alt="" className="h-9 w-9 object-contain" />
             Trésor Irakoze
           </motion.div>
 
@@ -342,8 +343,8 @@ export default function App() {
       </Section>
 
       {/* Education Section */}
-      <Section title="Education">
-        <div className="grid md:grid-cols-2 gap-8">
+      <Section title="Education & Certificates">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {[
             {
               degree: "Bachelor's Degree in Software Engineering",
@@ -359,6 +360,49 @@ export default function App() {
             },
           ].map((edu, i) => (
             <EducationCard key={i} {...edu} index={i} />
+          ))}
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: 'Code2Connect Fellowship II',
+              issuer: 'Solvit Africa & DOT Rwanda',
+              type: 'PDF Certificate',
+              href: '/certificats/solvit.pdf',
+            },
+            {
+              title: 'Networking Essentials',
+              issuer: 'Cisco Networking Academy',
+              type: 'Certificate',
+              image: '/certificats/cisco.png',
+            },
+            {
+              title: 'Space Hackathon Rwanda 2023',
+              issuer: 'The Spring Institute',
+              type: 'Certificate',
+              image: encodeURI('/certificats/CertificateHackathonRwanda2023_Tresor Irakoze.png'),
+            },
+            {
+              title: 'Machine Learning',
+              issuer: 'Saturdays.AI',
+              type: 'Certificate',
+              image: '/certificats/ML.png',
+            },
+            {
+              title: 'Information Security',
+              issuer: 'Cybersecurity Training',
+              type: 'Certificate',
+              image: '/certificats/IS.png',
+            },
+            {
+              title: 'Frontend Internship',
+              issuer: 'Jackal Tech Ltd',
+              type: 'Certificate',
+              image: '/certificats/jackal.png',
+            },
+          ].map((certificate, i) => (
+            <CertificateCard key={certificate.title} {...certificate} index={i} />
           ))}
         </div>
       </Section>
@@ -506,7 +550,8 @@ export default function App() {
       <footer className="border-t border-border py-12 mt-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-2xl tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+            <div className="flex items-center gap-3 text-2xl tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+              <img src="/logo/tt.png" alt="" className="h-9 w-9 object-contain" />
               Trésor Irakoze
             </div>
             <div className="text-muted-foreground">
@@ -677,6 +722,48 @@ function EducationCard({ degree, school, year, icon: Icon, index }: any) {
       <div className="text-lg text-accent mb-2">{school}</div>
       <div className="text-muted-foreground">{year}</div>
     </motion.div>
+  );
+}
+
+function CertificateCard({ title, issuer, type, image, href, index }: any) {
+  const certificateHref = href || image;
+
+  return (
+    <motion.a
+      href={certificateHref}
+      target="_blank"
+      rel="noreferrer"
+      className="group overflow-hidden bg-card rounded-2xl border border-border cursor-pointer"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.08 }}
+      whileHover={{ y: -6, borderColor: 'var(--accent)' }}
+    >
+      <div className="aspect-[4/3] bg-surface overflow-hidden flex items-center justify-center">
+        {image ? (
+          <motion.img
+            src={image}
+            alt={`${title} certificate`}
+            className="w-full h-full object-cover"
+            whileHover={{ scale: 1.04 }}
+            transition={{ duration: 0.4 }}
+          />
+        ) : (
+          <div className="flex flex-col items-center justify-center gap-3 text-accent">
+            <Award size={44} />
+            <span className="text-sm uppercase tracking-[0.2em]">Open PDF</span>
+          </div>
+        )}
+      </div>
+      <div className="p-6">
+        <div className="text-xs uppercase tracking-[0.2em] text-accent mb-3">{type}</div>
+        <h3 className="text-2xl mb-2 group-hover:text-accent transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
+          {title}
+        </h3>
+        <div className="text-muted-foreground">{issuer}</div>
+      </div>
+    </motion.a>
   );
 }
 
