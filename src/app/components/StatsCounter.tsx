@@ -47,7 +47,7 @@ export default function StatsCounter() {
         >
           <div
             className="text-5xl mb-3 text-accent"
-            style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
+            style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
           >
             <AnimatedCounter value={stat.value} suffix={stat.suffix} />
           </div>

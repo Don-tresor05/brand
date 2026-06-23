@@ -56,7 +56,7 @@ export default function TechStack() {
           >
             <h3
               className="text-2xl mb-6"
-              style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
+              style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
             >
               {category.category}
             </h3>
@@ -92,7 +92,7 @@ export default function TechStack() {
       <div>
         <h3
           className="text-2xl mb-8 text-center"
-          style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
+          style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
         >
           Technologies & Tools
         </h3>

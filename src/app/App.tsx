@@ -51,7 +51,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <motion.div
             className="text-2xl tracking-tight"
-            style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
+            style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
             whileHover={{ scale: 1.05 }}
           >
             Trésor Irakoze
@@ -130,7 +130,7 @@ export default function App() {
             <div className="overflow-hidden">
               <motion.h1
                 className="text-[120px] leading-[0.9] tracking-tight mb-6"
-                style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
+                style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -224,7 +224,7 @@ export default function App() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-4xl mb-6" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+            <h3 className="text-4xl mb-6" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
               Passionate about creating exceptional digital experiences
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -470,7 +470,7 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            I'm based in Kabuga, Kigali, Rwanda, and open to internships, full-stack roles, freelance UI/UX work, and collaborations around software, mobile apps, databases, and secure systems.
+            I'm based in Kigali, Rwanda, and open to internships, full-stack roles, freelance UI/UX work, and collaborations around software, mobile apps, databases, and secure systems.
           </motion.p>
 
           <motion.div
@@ -506,7 +506,7 @@ export default function App() {
       <footer className="border-t border-border py-12 mt-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-2xl tracking-tight" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+            <div className="text-2xl tracking-tight" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
               Trésor Irakoze
             </div>
             <div className="text-muted-foreground">
@@ -571,7 +571,7 @@ function Section({ id, title, children }: { id?: string; title: string; children
     <section id={id} className="max-w-7xl mx-auto px-6 py-32">
       <motion.h2
         className="text-6xl mb-16 tracking-tight"
-        style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}
+        style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -605,7 +605,7 @@ function ProjectCard({ title, desc, tech, image, index }: any) {
         />
       </div>
       <div className="p-8">
-        <h3 className="text-2xl mb-3" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+        <h3 className="text-2xl mb-3" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
           {title}
         </h3>
         <p className="text-muted-foreground mb-4 leading-relaxed">{desc}</p>
@@ -644,7 +644,7 @@ function ExperienceCard({ company, role, period, description, index }: any) {
       <div className="absolute -left-2 top-0 w-4 h-4 bg-accent rounded-full" />
       <div className="flex items-start justify-between mb-2">
         <div>
-          <h3 className="text-2xl mb-1" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+          <h3 className="text-2xl mb-1" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
             {role}
           </h3>
           <div className="text-lg text-accent mb-2">{company}</div>
@@ -671,7 +671,7 @@ function EducationCard({ degree, school, year, icon: Icon, index }: any) {
       whileHover={{ y: -4 }}
     >
       <Icon className="text-accent mb-4" size={32} />
-      <h3 className="text-2xl mb-2" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+      <h3 className="text-2xl mb-2" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
         {degree}
       </h3>
       <div className="text-lg text-accent mb-2">{school}</div>
@@ -694,7 +694,7 @@ function TestimonialCard({ name, role, text, index }: any) {
       <Quote className="text-accent mb-4" size={32} />
       <p className="text-muted-foreground leading-relaxed mb-6">{text}</p>
       <div>
-        <div className="text-lg" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 600 }}>
+        <div className="text-lg" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 600 }}>
           {name}
         </div>
         <div className="text-sm text-muted-foreground">{role}</div>
@@ -720,7 +720,7 @@ function ServiceCard({ icon: Icon, title, desc, index }: any) {
       >
         <Icon className="text-accent mb-4" size={40} />
       </motion.div>
-      <h3 className="text-2xl mb-3" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+      <h3 className="text-2xl mb-3" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
         {title}
       </h3>
       <p className="text-muted-foreground leading-relaxed">{desc}</p>
@@ -753,7 +753,7 @@ function ArticleCard({ title, date, readTime, image, index }: any) {
         <span>•</span>
         <span>{readTime}</span>
       </div>
-      <h3 className="text-2xl mb-2 group-hover:text-accent transition-colors" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
+      <h3 className="text-2xl mb-2 group-hover:text-accent transition-colors" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}>
         {title}
       </h3>
       <motion.div
