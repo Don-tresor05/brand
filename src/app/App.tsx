@@ -101,7 +101,7 @@ export default function App() {
         <motion.div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920')`,
+            backgroundImage: `url('/about.jpeg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
