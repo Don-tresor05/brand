@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform, useInView } from 'motion/react';
-import { Moon, Sun, Github, Linkedin, Twitter, Mail, ExternalLink, Code2, Database, Globe, Smartphone, Server, Cpu, ArrowUp, CheckCircle2, Quote, Calendar, Award, GraduationCap, Briefcase } from 'lucide-react';
+import { motion, useScroll } from 'motion/react';
+import { Moon, Sun, Github, Linkedin, Twitter, Mail, ExternalLink, Code2, Database, Globe, Smartphone, Server, Cpu, ArrowUp, CheckCircle2, Quote, Calendar, Award, GraduationCap } from 'lucide-react';
 import GitHubHeatmap from './components/GitHubHeatmap';
 import CodeShowcase from './components/CodeShowcase';
 import TechStack from './components/TechStack';
@@ -135,9 +135,9 @@ export default function App() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Building the
+                Building Secure
                 <br />
-                <span className="text-accent">Future</span> of Web
+                <span className="text-accent">Apps</span> for Web
               </motion.h1>
             </div>
 
@@ -147,7 +147,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              Crafting elegant solutions to complex problems. Specialized in TypeScript, React, Node.js, and cloud architecture.
+              Software engineer based in Kigali, Rwanda, building full-stack web and mobile products with React, React Native, Spring Boot, Django, Node.js, and a security-first mindset.
             </motion.p>
 
             <motion.div
@@ -181,9 +181,9 @@ export default function App() {
               transition={{ delay: 1 }}
             >
               {[
-                { icon: Github, href: '#', color: '#333' },
-                { icon: Linkedin, href: '#', color: '#0A66C2' },
-                { icon: Twitter, href: '#', color: '#1DA1F2' },
+                { icon: Github, href: 'https://github.com/Don-tresor05', color: '#333' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/don-tr%C3%A9sor-750a3a289', color: '#0A66C2' },
+                { icon: Twitter, href: 'https://x.com/dtresor_', color: '#1DA1F2' },
               ].map((social, i) => (
                 <motion.a
                   key={i}
@@ -228,13 +228,13 @@ export default function App() {
               Passionate about creating exceptional digital experiences
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With over 8 years of experience in software development, I've had the privilege of working with startups and Fortune 500 companies to build scalable, user-centric applications.
+              I'm Trésor Irakoze, an IT software engineer and full-stack developer with hands-on experience across frontend, backend, mobile, databases, UI/UX design, and cybersecurity.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              I believe in writing clean, maintainable code and staying at the forefront of technology trends. When I'm not coding, you'll find me contributing to open-source projects or mentoring aspiring developers.
+              I work with Java, TypeScript, Python, C#, React, React Native, Spring Boot, Django REST Framework, Node.js, MySQL, MongoDB, SQL Server, Linux, and VAPT workflows. I also bring creative experience from Figma, Adobe Photoshop, and professional photography.
             </p>
             <div className="space-y-4">
-              {['Clean Architecture', 'Test-Driven Development', 'Agile Methodology'].map((skill, i) => (
+              {['Full-Stack Web & Mobile Development', 'Cybersecurity & Linux Administration', 'UI/UX Design & Visual Production'].map((skill, i) => (
                 <motion.div
                   key={i}
                   className="flex items-center gap-3"
@@ -272,27 +272,27 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              title: 'CloudSync Platform',
-              desc: 'Real-time collaboration platform with WebSocket integration',
-              tech: ['React', 'Node.js', 'PostgreSQL', 'Redis'],
+              title: 'NGO Fund Frontend',
+              desc: 'Frontend work for an NGO funding platform, with active GitHub contribution history.',
+              tech: ['React', 'JavaScript', 'Tailwind CSS', 'Vite'],
               image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
             {
-              title: 'AI Analytics Dashboard',
-              desc: 'ML-powered analytics platform for business intelligence',
-              tech: ['Next.js', 'Python', 'TensorFlow', 'AWS'],
+              title: 'NGO Fund Backend',
+              desc: 'Backend services supporting funding workflows and application data management.',
+              tech: ['Django', 'REST API', 'Python', 'Database Design'],
               image: 'https://images.unsplash.com/photo-1675495666895-9091741bfd78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
             {
-              title: 'E-Commerce Suite',
-              desc: 'Headless commerce platform with microservices architecture',
-              tech: ['TypeScript', 'GraphQL', 'Docker', 'Kubernetes'],
+              title: 'Fitness Management Solution',
+              desc: 'Java-based management system for fitness operations and records.',
+              tech: ['Java', 'MySQL', 'Desktop/Web App'],
               image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
             {
-              title: 'DevOps Automation',
-              desc: 'CI/CD pipeline orchestration and infrastructure as code',
-              tech: ['Terraform', 'GitHub Actions', 'AWS', 'Ansible'],
+              title: 'Veterinary System',
+              desc: 'Application for veterinary service records and operational workflows.',
+              tech: ['Java', 'Database Management', 'UI Design'],
               image: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
           ].map((project, i) => (
@@ -306,22 +306,34 @@ export default function App() {
         <div className="space-y-12">
           {[
             {
-              company: 'TechCorp Inc.',
-              role: 'Senior Full-Stack Engineer',
-              period: '2021 - Present',
-              description: 'Leading development of cloud-native applications and mentoring junior developers.',
+              company: 'Codveda Technologies',
+              role: 'Full-Stack Developer Intern',
+              period: '2025 - Present',
+              description: 'Developing end-to-end web applications while working across frontend and backend systems with modern development practices.',
             },
             {
-              company: 'StartupXYZ',
-              role: 'Lead Developer',
-              period: '2019 - 2021',
-              description: 'Built the core platform from scratch, scaling to 100K+ users.',
+              company: 'Jackal Tech Ltd',
+              role: 'Frontend Developer Intern',
+              period: '2025 - Present',
+              description: 'Building responsive user interfaces, improving UI/UX quality, and implementing modern frontend best practices.',
             },
             {
-              company: 'Digital Agency Co.',
-              role: 'Full-Stack Developer',
-              period: '2017 - 2019',
-              description: 'Delivered 20+ client projects using modern web technologies.',
+              company: 'Solvit Africa & Digital Opportunity Trust Rwanda',
+              role: 'Django Fellow - Code2Connect Fellowship II',
+              period: 'Dec 2025 - Feb 2026',
+              description: 'Completed an intensive fellowship focused on Django web development, practical backend projects, and professional skills.',
+            },
+            {
+              company: 'Catamaran Studio LTD',
+              role: 'Photographer',
+              period: '2024 - 2026',
+              description: 'Captured, edited, and retouched professional studio photography using Adobe Photoshop while managing client sessions.',
+            },
+            {
+              company: 'Freelance / Personal Projects',
+              role: 'UI/UX Designer',
+              period: '2024 - Present',
+              description: 'Designing interfaces and prototypes in Figma, creating wireframes, mockups, design systems, and visual assets.',
             },
           ].map((job, i) => (
             <ExperienceCard key={i} {...job} index={i} />
@@ -334,15 +346,15 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
-              degree: 'M.S. Computer Science',
-              school: 'Stanford University',
-              year: '2015 - 2017',
+              degree: "Bachelor's Degree in Software Engineering",
+              school: 'Adventist University of Central Africa (AUCA)',
+              year: '2022 - 2025',
               icon: GraduationCap,
             },
             {
-              degree: 'B.S. Software Engineering',
-              school: 'MIT',
-              year: '2011 - 2015',
+              degree: 'Networking Essentials Certificate',
+              school: 'Cisco Networking Academy',
+              year: '2022 - 2023',
               icon: Award,
             },
           ].map((edu, i) => (
@@ -356,24 +368,24 @@ export default function App() {
         <StatsCounter />
       </Section>
 
-      {/* Testimonials Section */}
-      <Section title="Testimonials">
+      {/* Certifications Section */}
+      <Section title="Achievements">
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              name: 'Sarah Johnson',
-              role: 'CTO at TechCorp',
-              text: 'Alex is an exceptional engineer who consistently delivers high-quality work. His technical expertise and leadership have been invaluable to our team.',
+              name: 'Code2Connect Fellowship II',
+              role: 'Django Certificate',
+              text: 'Completed a 3-month intensive Django program delivered by Solvit Africa and Digital Opportunity Trust Rwanda.',
             },
             {
-              name: 'Michael Lee',
-              role: 'Product Manager',
-              text: 'Working with Alex has been a pleasure. He understands both the technical and business sides, making him an invaluable team member.',
+              name: 'Artificial Intelligence',
+              role: 'Saturdays.AI Certificate',
+              text: 'Completed AI training focused on practical learning and applied technology skills.',
             },
             {
-              name: 'Emily Chen',
-              role: 'Senior Designer',
-              text: 'Alex brings designs to life with pixel-perfect precision. His attention to detail and collaborative spirit make him a dream to work with.',
+              name: 'Space Hackathon',
+              role: 'Certificate of Participation',
+              text: 'Participated in a hackathon delivered by The Spring Institute for Forests on the Moon.',
             },
           ].map((testimonial, i) => (
             <TestimonialCard key={i} {...testimonial} index={i} />
@@ -388,32 +400,32 @@ export default function App() {
             {
               icon: Globe,
               title: 'Web Development',
-              desc: 'Full-stack web applications using modern frameworks and best practices.',
+              desc: 'Full-stack applications using React, Django, Spring Boot, Node.js, and modern APIs.',
             },
             {
               icon: Smartphone,
               title: 'Mobile Apps',
-              desc: 'Cross-platform mobile solutions with React Native and native performance.',
+              desc: 'Cross-platform mobile interfaces and app experiences with React Native.',
             },
             {
               icon: Server,
-              title: 'Cloud Architecture',
-              desc: 'Scalable cloud infrastructure on AWS, Azure, and Google Cloud Platform.',
+              title: 'Cybersecurity',
+              desc: 'Linux administration, server security analysis, vulnerability assessment, and penetration testing.',
             },
             {
               icon: Database,
               title: 'Database Design',
-              desc: 'Optimized database schemas for SQL and NoSQL databases.',
+              desc: 'Database development with MySQL, MongoDB, SQL Server, and PL/SQL.',
             },
             {
               icon: Code2,
               title: 'API Development',
-              desc: 'RESTful and GraphQL APIs with comprehensive documentation.',
+              desc: 'RESTful APIs with Django REST Framework, Node.js, and Spring Boot.',
             },
             {
               icon: Cpu,
-              title: 'DevOps',
-              desc: 'CI/CD pipelines, containerization, and infrastructure automation.',
+              title: 'UI/UX & Visual Design',
+              desc: 'Figma prototypes, interface systems, Photoshop assets, and photography workflows.',
             },
           ].map((service, i) => (
             <ServiceCard key={i} {...service} index={i} />
@@ -421,26 +433,26 @@ export default function App() {
         </div>
       </Section>
 
-      {/* Blog Section */}
-      <Section title="Latest Articles">
+      {/* GitHub Repositories Section */}
+      <Section title="Popular Repositories">
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: 'Building Scalable React Applications',
-              date: 'March 15, 2026',
-              readTime: '8 min read',
+              title: 'My-portfolio',
+              date: 'Language: JavaScript',
+              readTime: 'Visibility: Public',
               image: 'https://images.unsplash.com/photo-1675495277087-10598bf7bcd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
             {
-              title: 'Mastering TypeScript Generics',
-              date: 'March 1, 2026',
-              readTime: '12 min read',
+              title: 'Fitness-mgt-sol',
+              date: 'Language: Java',
+              readTime: 'Visibility: Public',
               image: 'https://images.unsplash.com/photo-1675495666589-94cdafbcfcc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
             {
-              title: 'Cloud-Native Development Best Practices',
-              date: 'February 20, 2026',
-              readTime: '10 min read',
+              title: 'VeterinarySystem',
+              date: 'Language: Java',
+              readTime: 'Visibility: Public',
               image: 'https://images.unsplash.com/photo-1675495667069-d18d7d78eeb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800',
             },
           ].map((article, i) => (
@@ -458,7 +470,7 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            I'm based in Kabuga, Kigali, Rwanda, and open to internships, full-stack roles, freelance UI/UX work, and collaborations around software, mobile apps, databases, and secure systems.
           </motion.p>
 
           <motion.div
@@ -470,7 +482,15 @@ export default function App() {
           >
             <CopyEmailButton />
             <motion.a
-              href="#"
+              href="tel:+250784809323"
+              className="px-8 py-4 border border-border rounded-full text-lg cursor-pointer hover:bg-surface transition-colors flex items-center justify-center gap-2"
+              whileHover={{ scale: 1.05, y: -4 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              +250 784 809 323
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/don-tr%C3%A9sor-750a3a289"
               className="px-8 py-4 border border-border rounded-full text-lg cursor-pointer hover:bg-surface transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05, y: -4 }}
               whileTap={{ scale: 0.95 }}
@@ -493,10 +513,14 @@ export default function App() {
               © 2026 All rights reserved
             </div>
             <div className="flex gap-6">
-              {[Github, Linkedin, Twitter].map((Icon, i) => (
+              {[
+                { icon: Github, href: 'https://github.com/Don-tresor05' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/don-tr%C3%A9sor-750a3a289' },
+                { icon: Twitter, href: 'https://x.com/dtresor_' },
+              ].map(({ icon: Icon, href }, i) => (
                 <motion.a
                   key={i}
-                  href="#"
+                  href={href}
                   className="text-muted-foreground hover:text-accent transition-colors cursor-pointer"
                   whileHover={{ scale: 1.2, y: -2 }}
                 >
@@ -721,7 +745,7 @@ function ArticleCard({ title, date, readTime, image, index }: any) {
         className="flex items-center gap-2 text-accent"
         whileHover={{ x: 5 }}
       >
-        Read More <ExternalLink size={16} />
+        View Repository <ExternalLink size={16} />
       </motion.div>
     </motion.div>
   );
@@ -732,7 +756,7 @@ function CopyEmailButton() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('alex.chen@example.com');
+    navigator.clipboard.writeText('dontresor922@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

@@ -6,39 +6,40 @@ export default function TechStack() {
       category: 'Frontend',
       skills: [
         { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 92 },
-        { name: 'Next.js', level: 88 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Vue.js', level: 75 },
+        { name: 'React Native', level: 88 },
+        { name: 'TypeScript', level: 90 },
+        { name: 'Tailwind CSS', level: 92 },
+        { name: 'Figma', level: 86 },
       ],
     },
     {
       category: 'Backend',
       skills: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Python', level: 85 },
-        { name: 'PostgreSQL', level: 88 },
-        { name: 'MongoDB', level: 82 },
-        { name: 'GraphQL', level: 86 },
+        { name: 'Java / Spring Boot', level: 88 },
+        { name: 'Django REST Framework', level: 90 },
+        { name: 'Node.js', level: 86 },
+        { name: 'C#', level: 78 },
+        { name: 'RESTful APIs', level: 90 },
       ],
     },
     {
-      category: 'DevOps',
+      category: 'Data & Security',
       skills: [
-        { name: 'Docker', level: 87 },
-        { name: 'AWS', level: 84 },
-        { name: 'Kubernetes', level: 78 },
-        { name: 'CI/CD', level: 90 },
-        { name: 'Terraform', level: 75 },
+        { name: 'MySQL / SQL Server', level: 88 },
+        { name: 'MongoDB', level: 82 },
+        { name: 'PL/SQL', level: 80 },
+        { name: 'Linux Administration', level: 84 },
+        { name: 'VAPT', level: 78 },
       ],
     },
   ];
 
   const badges = [
-    'React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker',
-    'Kubernetes', 'GraphQL', 'PostgreSQL', 'MongoDB', 'Redis',
-    'Next.js', 'Vue.js', 'Tailwind', 'Express', 'Django',
-    'FastAPI', 'Git', 'Linux', 'Nginx', 'Jest', 'Cypress',
+    'Java', 'JavaScript', 'TypeScript', 'Python', 'C#', 'C', 'React',
+    'React Native', 'Spring Boot', 'Django REST Framework', 'Node.js',
+    'RESTful APIs', 'MySQL', 'MongoDB', 'SQL Server', 'PL/SQL', 'HTML5',
+    'CSS3', 'Tailwind CSS', 'Figma', 'Adobe Photoshop', 'Linux',
+    'Git & GitHub', 'VAPT', 'Penetration Testing', 'Server Security',
   ];
 
   return (

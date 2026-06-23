@@ -27,10 +27,10 @@ function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: strin
 
 export default function StatsCounter() {
   const stats = [
-    { label: 'Projects Completed', value: 150, suffix: '+' },
-    { label: 'GitHub Stars', value: 2400, suffix: '+' },
-    { label: 'Code Commits', value: 8500, suffix: '+' },
-    { label: 'Client Satisfaction', value: 98, suffix: '%' },
+    { label: 'GitHub Repositories', value: 74, suffix: '' },
+    { label: 'Yearly Contributions', value: 1532, suffix: '' },
+    { label: 'GitHub Followers', value: 7, suffix: '' },
+    { label: 'Active Specialties', value: 6, suffix: '+' },
   ];
 
   return (
