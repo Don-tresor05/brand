@@ -130,7 +130,7 @@ export default function App() {
             <div className="overflow-hidden">
               <motion.h1
                 className="text-[120px] leading-[0.9] tracking-tight mb-6"
-                style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 700 }}
+                style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800 }}
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
