@@ -264,7 +264,7 @@ export default function App() {
 
       {/* GitHub Activity */}
       <Section title="GitHub Contributions">
-        <GitHubHeatmap />
+        <GitHubHeatmap username="Don-tresor05" />
       </Section>
 
       {/* Projects Section */}
