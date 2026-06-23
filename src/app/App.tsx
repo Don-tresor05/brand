@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll } from 'motion/react';
-import { Moon, Sun, Github, Linkedin, Twitter, Mail, ExternalLink, Code2, Database, Globe, Smartphone, Server, Cpu, ArrowUp, CheckCircle2, Quote, Calendar, Award, GraduationCap } from 'lucide-react';
+import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, Code2, Database, Globe, Smartphone, Server, Cpu, ArrowUp, CheckCircle2, Quote, Calendar, Award, GraduationCap } from 'lucide-react';
 import GitHubHeatmap from './components/GitHubHeatmap';
 import CodeShowcase from './components/CodeShowcase';
 import TechStack from './components/TechStack';
@@ -183,7 +183,7 @@ export default function App() {
               {[
                 { icon: Github, href: 'https://github.com/Don-tresor05', color: '#333' },
                 { icon: Linkedin, href: 'https://www.linkedin.com/in/don-tr%C3%A9sor-750a3a289', color: '#0A66C2' },
-                { icon: Twitter, href: 'https://x.com/dtresor_', color: '#1DA1F2' },
+                { icon: XSocialIcon, href: 'https://x.com/dtresor_', color: '#000000' },
               ].map((social, i) => (
                 <motion.a
                   key={i}
@@ -516,7 +516,7 @@ export default function App() {
               {[
                 { icon: Github, href: 'https://github.com/Don-tresor05' },
                 { icon: Linkedin, href: 'https://www.linkedin.com/in/don-tr%C3%A9sor-750a3a289' },
-                { icon: Twitter, href: 'https://x.com/dtresor_' },
+                { icon: XSocialIcon, href: 'https://x.com/dtresor_' },
               ].map(({ icon: Icon, href }, i) => (
                 <motion.a
                   key={i}
@@ -547,6 +547,21 @@ export default function App() {
         </motion.button>
       )}
     </div>
+  );
+}
+
+function XSocialIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M18.9 2h3.7l-8.1 9.3L24 22h-7.4l-5.8-7.6L4.2 22H.5l8.7-10L0 2h7.6l5.2 6.9L18.9 2Zm-1.3 18.1h2L6.5 3.8H4.3l13.3 16.3Z" />
+    </svg>
   );
 }
 
