@@ -487,7 +487,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-2xl tracking-tight" style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700 }}>
-              Alex Chen
+              Trésor Irakoze
             </div>
             <div className="text-muted-foreground">
               © 2026 All rights reserved
